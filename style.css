@@ -1,64 +1,70 @@
-* {
-  text-align: center;
-}
 body {
-  font-family: "Roboto Mono", monospace;
-  min-height: 300px;
-  max-height: 700px;
-  background-color: #bdbbbc;
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+    background-color: #bdbbbc;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-
-.container {
-  text-align: center;
-  padding: 20px;
-  height: 25vh;
-  margin-left: auto;
-  margin-right: auto;
+  
+.heading {
+    font-family: 'Pacifico', cursive;
+    margin: 35px auto 20px;
 }
-
-.page-title {
-  color: #000000;
-  margin: 0 0 5px;
-  top: 20px;
+  
+hr {
+    border-top: 2px solid black;
+    width: 40%;
+    margin-bottom: 55px;
 }
-
-.page-subtitle {
-  color: #000000;
-  margin-top: 5px;
+  
+.main {
+    width: 50vw;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
-
-input {
-  margin: 12px;
-  padding: 6px;
-  border-radius: 5px;
-}
-
+  
 label {
-  color: black;
+    font-size: 20px;
 }
-
-button {
-  margin-top: 5px;
-  padding: 4px 4px;
-  border-radius: 6px;
-  background: #eed554;
-  width: 100px;
-  height: 40px;
+  
+.btn {
+    width: 200px;
 }
-
-h2 {
-  color: #ffffff;
-  font-size: 30px;
+  
+#finalAmount {
+    font-family: 'Lobster', cursive;
+    display: none;
+    margin: 50px auto;
 }
-
-.bit-coin {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: 60%;
-  top: 10%;
+  
+#finalAmount h2 {
+    font-size: 50px;
 }
-
+  
+.finalValue {
+    font-family: 'Amiri', serif;
+}
+  
+@media (max-width: 768px) {
+    hr {
+        width: 60%;
+    }
+    .main {
+        width: 100%;
+    }
+}
+  
+@media (max-width: 400px) {
+    .heading {
+        font-size: 60px;
+    }
+    hr {
+        width: 75%;
+    }
+    #finalAmount h2, .finalValue {
+        font-size: 40px;
+    }
+}
